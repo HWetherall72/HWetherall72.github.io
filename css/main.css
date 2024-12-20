@@ -24,7 +24,7 @@
   position: fixed;
   top: 0;
   width: 100%;
-  opacity: 0.85;
+  opacity: 0.95;
   visibility: hidden; }
   .menu.show {
     visibility: visible; }
@@ -57,7 +57,8 @@
       height: 250px;
       background: url("../img/portrait.jpg");
       border-radius: 50%;
-      border: solid 3px #eb1717; }
+      border: solid 3px #eb1717;
+      opacity: 1; }
   .menu .nav-item {
     transform: translate3d(600px, 0, 0);
     transition: all 0.5s ease-out; }
@@ -149,11 +150,8 @@ main {
     margin-top: 1rem; }
     main .icons a {
       padding: 0.4rem; }
-      main .icons a .twitter:hover {
-        color: #1DA1F2;
-        transition: all 0.5s ease-out; }
-      main .icons a .facebook:hover {
-        color: #1877F2;
+      main .icons a .itch:hover {
+        color: #fa5c5c;
         transition: all 0.5s ease-out; }
       main .icons a .linkedin:hover {
         color: #0077B5;
@@ -181,17 +179,21 @@ main {
     font-size: 1.5rems; }
   .about-info .exp-1 {
     grid-area: exp1; }
+  .about-info .exp-2 {
+    grid-area: exp2; }
   .about-info .exp {
     background: #515151;
     padding: 0.5rem;
     border-bottom: #eb1717 5px solid; }
+    .about-info .exp h3 {
+      font-weight: bold; }
 
 .projects {
   display: grid;
   grid-gap: 0.7rem;
   grid-template-columns: repeat(2, 1fr); }
   .projects img {
-    width: 100%;
+    max-width: 600px;
     border: 3px #fff solid; }
     .projects img:hover {
       opacity: 0.5;
@@ -217,12 +219,12 @@ main {
       .boxes div:hover span {
         color: #000; }
 
-.btn, .btn-dark, .btn-light {
+.btn, .btn-dark, .btn-light, .btn-itch {
   display: block;
   padding: 0.5rem 1rem;
   border: 0;
   margin-bottom: 0.3rem; }
-  .btn:hover, .btn-dark:hover, .btn-light:hover {
+  .btn:hover, .btn-dark:hover, .btn-light:hover, .btn-itch:hover {
     background: #eb1717;
     color: #000; }
 
@@ -232,6 +234,10 @@ main {
 
 .btn-light {
   background: #c4c4c4;
+  color: #333; }
+
+.btn-itch {
+  background: #fa5c5c;
   color: #333; }
 
 #main-footer {
